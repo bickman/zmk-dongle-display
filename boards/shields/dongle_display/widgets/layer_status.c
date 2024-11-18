@@ -26,15 +26,14 @@ static void set_layer_symbol(lv_obj_t *label, struct layer_status_state state) {
     if (state.label == NULL) {
         char text[7] = {};
 
-        //sprintf(text, "%i", state.index);
-        sprintf(text, "%i", 1);
+        sprintf(text, "%i", state.index);
 
         lv_label_set_text(label, text);
     } else {
         char text[18] = {};
 
-        //snprintf(text, sizeof(text), "%s", state.label);
-        snprintf(text, sizeof(text), "%s", "test");
+        snprintf(text, sizeof(text), "%s", state.label);
+        //snprintf(text, sizeof(text), "%s", "test");
 
         lv_label_set_text(label, text);
     }
