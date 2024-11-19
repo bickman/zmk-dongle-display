@@ -475,7 +475,3 @@ lv_font_t bit = {
     .user_data = NULL,
 };
 
-
-
-#endif /*#if BIT*/
-
