@@ -5,7 +5,6 @@
  */
 
 #include "custom_status_screen.h"
-#include "bit_lvgl.c"
 #include "bitProp.c"
 #include "widgets/battery_status.h"
 #include "widgets/modifiers.h"
