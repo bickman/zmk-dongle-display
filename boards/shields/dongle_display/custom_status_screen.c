@@ -6,6 +6,7 @@
 
 #include "custom_status_screen.h"
 #include "bit_lvgl.c"
+#include "bitProp.c"
 #include "widgets/battery_status.h"
 #include "widgets/modifiers.h"
 #include "widgets/bongo_cat.h"
@@ -35,7 +36,7 @@ lv_obj_t *zmk_display_status_screen() {
 
     lv_style_init(&global_style);
     //lv_style_set_text_font(&global_style, &lv_font_unscii_8);
-    lv_style_set_text_font(&global_style, &bit);
+    lv_style_set_text_font(&global_style, &bitProp);
     lv_style_set_text_letter_space(&global_style, 1);
     lv_style_set_text_line_space(&global_style, 1);
     lv_obj_add_style(screen, &global_style, LV_PART_MAIN);
